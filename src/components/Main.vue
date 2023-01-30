@@ -24,9 +24,9 @@
     <v-card class="mx-auto" :class="{ 'apply-shake': shake }" max-width="500">
         <v-card-text>
             <v-row>
-                <v-col cols="4">
+                <v-col>
                     <v-sheet class="pa-2 ma-2">
-                        {{ word }}
+                        <v-text-field v-on:keyup.enter="checkWord" v-model="word" variant="solo"></v-text-field>
                     </v-sheet>
                 </v-col>
                 <!-- <v-col offset="6">
