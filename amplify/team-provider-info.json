@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-spellingbee-dev-140709-authRole",
+      "UnauthRoleArn": "arn:aws:iam::960603126861:role/amplify-spellingbee-dev-140709-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::960603126861:role/amplify-spellingbee-dev-140709-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-spellingbee-dev-140709-deployment",
+      "UnauthRoleName": "amplify-spellingbee-dev-140709-unauthRole",
+      "StackName": "amplify-spellingbee-dev-140709",
+      "StackId": "arn:aws:cloudformation:us-east-1:960603126861:stack/amplify-spellingbee-dev-140709/4c3d05b0-a0d1-11ed-858b-0edc2b5fbf79",
+      "AmplifyAppId": "d1a6anudygrdxq"
+    }
+  }
+}
