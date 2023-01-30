@@ -20,6 +20,11 @@ export default defineConfig({
       './runtimeConfig': './runtimeConfig.browser',
     },
   },
+  root: './',
+  build: {
+    outDir: 'dist',
+  },
+  publicDir: 'src/assets'
   /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
   resolve: {
     extensions: [
