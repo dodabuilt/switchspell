@@ -97,7 +97,7 @@ export default {
         }
     },
     created() {
-        fetch('../dist/usa.txt')
+        fetch('/usa.txt')
             .then(response => response.text())
             .then(text => {
                 this.wordList = text.split(/\r?\n/);
