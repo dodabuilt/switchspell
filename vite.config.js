@@ -17,6 +17,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
+      './runtimeConfig': './runtimeConfig.browser',
     },
   },
   /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
