@@ -1,18 +1,22 @@
 <template>
-  <HelloWorld />
+  <Login />
+  <Main v-if="auth.authStatus === 'authenticated'"></Main>
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import Login from '@/components/Login.vue';
+import Main from '@/components/Main.vue';
+import { useAuthenticator } from '@aws-amplify/ui-vue';
 
-// Components
-import HelloWorld from "../components/HelloWorld.vue";
+export default {
+  components: { Login, Main },
+  setup() {
+    const auth = useAuthenticator();
 
-export default defineComponent({
-  name: "HomeView",
-
-  components: {
-    HelloWorld,
+    return { auth };
   },
-});
+  data() {
+    return {}
+  },
+}
 </script>
